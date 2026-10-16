@@ -9,5 +9,5 @@ class AppColors {
   static const Color background = Color.fromARGB(255, 254, 254, 254);
   static const Color textBlack = Color.fromARGB(255, 6, 6, 6);
   static const Color textfield = Color(0xFFF0EEEE);
-  static const Color login = Color.fromARGB(255, 149, 141, 141);
+  static const Color login = Color.fromARGB(255, 199, 195, 195);
 }

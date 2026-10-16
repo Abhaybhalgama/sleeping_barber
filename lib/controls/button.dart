@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.text,
-    required this.onPressed,
+    required this.onPressed,          
     this.height = 50.0,
     this.width = 30.0,
     this.backgroundColor = AppColors.login,
@@ -19,14 +19,14 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return SizedBox( 
       width: width,
       height: height,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.login,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(35),
           ),
         ),
         onPressed: onPressed,
@@ -34,7 +34,7 @@ class CustomButton extends StatelessWidget {
           text,
           style: const TextStyle(
             color: AppColors.textBlack,
-            fontSize: 16,
+            fontSize: 19,
             fontFamily: 'serif',
             fontWeight: FontWeight.bold,
           ),
