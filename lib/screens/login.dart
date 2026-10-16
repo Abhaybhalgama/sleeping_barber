@@ -3,7 +3,7 @@ import 'package:sleeping_barber/controls/button.dart';
 import 'package:sleeping_barber/controls/heading.dart';
 import 'package:sleeping_barber/resources/colors.dart';
 import 'package:sleeping_barber/resources/images.dart';
-import 'package:sleeping_barber/screens/customers/dashboard.dart';
+import 'package:sleeping_barber/screens/barbers/dashboard.dart';
 import 'package:sleeping_barber/screens/register.dart';
 
 class Login extends StatefulWidget {
@@ -14,6 +14,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final formkey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,99 +26,123 @@ class _LoginState extends State<Login> {
             child: Container(
               height: 100,
               width: 125,
-              margin: EdgeInsets.only(left: 0, top: 30),
+              margin: const EdgeInsets.only(left: 0, top: 30),
               child: Image.asset(i2[0], fit: BoxFit.contain),
             ),
           ),
           Heading(title: 'Login'),
-
           Container(
-            padding: EdgeInsets.all(4),
+            padding: const EdgeInsets.all(4),
             height: 270,
-            margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 19),
+            margin: const EdgeInsets.only(
+              left: 10,
+              right: 10,
+              top: 10,
+              bottom: 19,
+            ),
             decoration: BoxDecoration(
               border: Border.all(color: AppColors.textBlack, width: 2),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Email Row
-                Row(
-                  children: [
-                    SizedBox(
-                      width: 110,
-                      child: Text(
-                        "Email :",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'serif',
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: AppColors.textfield,
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide.none,
-                          ),
-                          contentPadding: EdgeInsets.symmetric(
-                            horizontal: 4,
-                            vertical: 10,
+            child: Form(
+              key: formkey,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Email Row
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 110,
+                        child: Text(
+                          "Email :",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'serif',
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-
-                SizedBox(height: 30),
-
-                // Password Row
-                Row(
-                  children: [
-                    SizedBox(
-                      width: 110,
-                      child: Text(
-                        "Password:",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'serif',
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: AppColors.textfield,
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide.none,
-                          ),
-                          contentPadding: EdgeInsets.symmetric(
-                            horizontal: 4,
-                            vertical: 10,
+                      Expanded(
+                        child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return "Please enter email";
+                            }
+                            final emailRegex = RegExp(
+                              r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
+                            );
+                            if (!emailRegex.hasMatch(value)) {
+                              return "Please enter a valid email address";
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            filled: true,
+                            fillColor: AppColors.textfield,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide.none,
+                            ),
+                            contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 4,
+                              vertical: 10,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  // Password Row
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 110,
+                        child: Text(
+                          "Password:",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'serif',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextFormField(
+                          obscureText: true,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return "Please enter password";
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            filled: true,
+                            fillColor: AppColors.textfield,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide.none,
+                            ),
+                            contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 4,
+                              vertical: 10,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
           Container(
-            margin: EdgeInsets.all(5),
+            margin: const EdgeInsets.all(5),
             child: Row(
               children: [
-                Text(
+                const Text(
                   "New Here?",
                   style: TextStyle(
                     fontFamily: "serif",
@@ -128,18 +154,20 @@ class _LoginState extends State<Login> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Register()),
+                      MaterialPageRoute(builder: (context) => const Register()),
                     );
                   },
-                  child: Text("Register",
-                  style: TextStyle(
-                    fontFamily: "serif",
-                    decoration: TextDecoration.underline,
-                    decorationThickness: 2,
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),),
+                  child: const Text(
+                    "Register",
+                    style: TextStyle(
+                      fontFamily: "serif",
+                      decoration: TextDecoration.underline,
+                      decorationThickness: 2,
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -149,10 +177,13 @@ class _LoginState extends State<Login> {
               text: 'Login',
               width: 200.0,
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Dashboard()),
-                );
+                // Triggers validation checks for Email and Password fields
+                if (formkey.currentState!.validate()) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Dashboard()),
+                  );
+                }
               },
             ),
           ),
