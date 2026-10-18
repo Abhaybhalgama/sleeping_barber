@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sleeping_barber/controls/heading.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
@@ -10,6 +11,10 @@ class History extends StatefulWidget {
 class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ListView(
+      children: [
+        Heading(title: "History", size:40)
+      ],
+    );
   }
 }

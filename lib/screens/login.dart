@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sleeping_barber/controls/btabbar.dart';
 import 'package:sleeping_barber/controls/button.dart';
 import 'package:sleeping_barber/controls/heading.dart';
 import 'package:sleeping_barber/resources/colors.dart';
 import 'package:sleeping_barber/resources/images.dart';
-import 'package:sleeping_barber/screens/barbers/dashboard.dart';
 import 'package:sleeping_barber/screens/register.dart';
 
 class Login extends StatefulWidget {
@@ -181,7 +181,7 @@ class _LoginState extends State<Login> {
                 if (formkey.currentState!.validate()) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Dashboard()),
+                    MaterialPageRoute(builder: (context) => BTabbar()),
                   );
                 }
               },

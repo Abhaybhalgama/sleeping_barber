@@ -11,4 +11,6 @@ class AppColors {
   static const Color textfield = Color(0xFFF0EEEE);
   static const Color login = Color.fromARGB(255, 199, 195, 195);
   static const Color navbar = Colors.white;
+  static const Color label = Color.fromARGB(255, 231, 229, 229);
+
 }
