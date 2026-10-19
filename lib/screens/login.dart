@@ -151,6 +151,9 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.black,
+                  ),
                   onPressed: () {
                     Navigator.push(
                       context,

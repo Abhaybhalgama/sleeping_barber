@@ -22,6 +22,7 @@ class _DashboardState extends State<Dashboard> {
         Container(
           margin: const EdgeInsets.only(left: 5, bottom: 40, top: 2),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.asset(i2[1], fit: BoxFit.contain),
               Image.asset(i2[2], fit: BoxFit.contain),

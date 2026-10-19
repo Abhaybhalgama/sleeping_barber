@@ -23,6 +23,9 @@ class _RecentBookState extends State<RecentBook> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
                 TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.black,
+                  ),
                   onPressed: () {
                     Navigator.push(
                       context,

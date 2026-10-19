@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:sleeping_barber/controls/button.dart';
 import 'package:sleeping_barber/controls/heading.dart';
 import 'package:sleeping_barber/resources/colors.dart';
+import 'package:sleeping_barber/screens/barbers/editprofile.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -10,8 +12,8 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-    String role = 'Customer';
 
+  String role = 'Barber';
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -43,10 +45,13 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: TextFormField(
+                      readOnly: true,
                       decoration: InputDecoration(
+                        labelText: 'Abhay',
                         filled: true,
                         fillColor: AppColors.textfield,
                         border: OutlineInputBorder(
+                          
                           borderRadius: BorderRadius.circular(8),
                           borderSide: BorderSide.none,
                         ),
@@ -75,33 +80,12 @@ class _ProfileState extends State<Profile> {
                     ),
                   ),
                   Radio<String>(
+                    activeColor: AppColors.textBlack,
                     value: 'Barber',
                     groupValue: role,
-                    onChanged: (value) {
-                      setState(() {
-                        role = value!;
-                      });
-                    },
                   ),
                   Text(
                     'Barber',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: 'serif',
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Radio<String>(
-                    value: 'Customer',
-                    groupValue: role,
-                    onChanged: (value) {
-                      setState(() {
-                        role = value!;
-                      });
-                    },
-                  ),
-                  Text(
-                    'Customer',
                     style: TextStyle(
                       fontSize: 15,
                       fontFamily: 'serif',
@@ -127,7 +111,9 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: TextFormField(
+                      readOnly: true,
                       decoration: InputDecoration(
+                        labelText: 'Abhay@gmail.com',
                         filled: true,
                         fillColor: AppColors.textfield,
                         border: OutlineInputBorder(
@@ -162,6 +148,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: TextFormField(
+                      readOnly: true, 
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: AppColors.textfield,
@@ -195,7 +182,9 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: TextFormField(
+                      readOnly: true,
                       decoration: InputDecoration(
+                        labelText: '1234567890',
                         filled: true,
                         fillColor: AppColors.textfield,
                         border: OutlineInputBorder(
@@ -228,7 +217,9 @@ class _ProfileState extends State<Profile> {
                   ),
                   Expanded(
                     child: TextFormField(
+                      readOnly: true,
                       decoration: InputDecoration(
+                        labelText: 'Rajkot',
                         filled: true,
                         fillColor: AppColors.textfield,
                         border: OutlineInputBorder(
@@ -248,6 +239,21 @@ class _ProfileState extends State<Profile> {
             ],
           ),
         ),
+
+      Center(
+            child: CustomButton(
+              text: 'Edit Profile',
+              width: 200.0,
+              onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Editprofile()),
+                  );
+               
+              },
+            ),
+          ),
+
       ],
     );
   }

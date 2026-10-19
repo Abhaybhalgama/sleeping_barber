@@ -28,6 +28,7 @@ class CustomButton extends StatelessWidget {
       height: height,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
+          overlayColor:Colors.transparent,
           backgroundColor: AppColors.login,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(radius),
