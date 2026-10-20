@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sleeping_barber/controls/button.dart';
 import 'package:sleeping_barber/controls/ctabbar.dart';
 import 'package:sleeping_barber/controls/heading.dart';
 import 'package:sleeping_barber/resources/colors.dart';
 import 'package:sleeping_barber/resources/images.dart';
+import 'package:sleeping_barber/screens/customers/cbarber.dart';
 
 class Cservice extends StatefulWidget {
   const Cservice({super.key});
@@ -55,7 +57,7 @@ class _CserviceState extends State<Cservice> {
           ),
           Heading(title: "Choose Service", size: 40),
 
-                    Row(
+         Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
              Image.asset(i2[9], fit: BoxFit.contain,height: 100,),
@@ -98,6 +100,25 @@ class _CserviceState extends State<Cservice> {
                           fontFamily: "serif",
 
                         ),),
+                      
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomButton(
+                          text: "CHOOSE",
+                          fontsize: 14, 
+                          width: 70,  
+                          radius: 19,
+                                     
+                          onPressed: () {
+                           Navigator.push(
+                             context,
+                             MaterialPageRoute(builder: (context) => const Cbarber()),
+                           );
+                         },
+                      )
+                        ],
+                      )
 
                       ],
                     )
@@ -150,6 +171,24 @@ class _CserviceState extends State<Cservice> {
                           fontFamily: "serif",
 
                         ),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomButton(
+                          text: "CHOOSE",
+                          fontsize: 14, 
+                          width: 70,  
+                          radius: 19,
+                                     
+                          onPressed: () {
+                           Navigator.push(
+                             context,
+                             MaterialPageRoute(builder: (context) => const Cbarber()),
+                           );
+                         },
+                      )
+                        ],
+                      )
 
                       ],
                     )
@@ -205,6 +244,24 @@ class _CserviceState extends State<Cservice> {
                           fontFamily: "serif",
 
                         ),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomButton(
+                          text: "CHOOSE",
+                          fontsize: 14, 
+                          width: 70,  
+                          radius: 19,
+                                     
+                          onPressed: () {
+                           Navigator.push(
+                             context,
+                             MaterialPageRoute(builder: (context) => const Cbarber()),
+                           );
+                         },
+                      )
+                        ],
+                      )
 
                       ],
                     )
@@ -257,6 +314,24 @@ class _CserviceState extends State<Cservice> {
                           fontFamily: "serif",
 
                         ),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomButton(
+                          text: "CHOOSE",
+                          fontsize: 14, 
+                          width: 70,  
+                          radius: 19,
+                                     
+                          onPressed: () {
+                           Navigator.push(
+                             context,
+                             MaterialPageRoute(builder: (context) => const Cbarber()),
+                           );
+                         },
+                      )
+                        ],
+                      )
 
                       ],
                     )
@@ -267,8 +342,9 @@ class _CserviceState extends State<Cservice> {
               Image.asset(i2[12], fit: BoxFit.contain,height: 120,),
 
             ],
-          )
+          ),
 
+        SizedBox(height: 20,)
         ],
       ),
     );

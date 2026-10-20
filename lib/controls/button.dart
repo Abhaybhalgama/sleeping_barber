@@ -9,6 +9,7 @@ class CustomButton extends StatelessWidget {
   final Color backgroundColor;
   final double fontsize;
   final double radius;
+  final Alignment ? positioned;
 
   const CustomButton({
     super.key,
@@ -18,7 +19,8 @@ class CustomButton extends StatelessWidget {
     this.width = 30.0,
     this.backgroundColor = AppColors.login,
     this.fontsize = 19,
-    this.radius=35
+    this.radius=35,
+    this.positioned
   });
 
   @override
@@ -30,6 +32,7 @@ class CustomButton extends StatelessWidget {
 
         
         style: ElevatedButton.styleFrom(
+         alignment:positioned ,
           padding: EdgeInsets.all(4),
           overlayColor:Colors.transparent,
           backgroundColor:backgroundColor,

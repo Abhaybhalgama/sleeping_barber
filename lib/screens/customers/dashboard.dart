@@ -35,7 +35,7 @@ class _DashboardState extends State<Dashboard> {
         Column(
           children: [
             CustomButton(
-              text: "Book Your Slot",
+              text: "+ Book Your Slot",
               height: 70,
               width: 350,
               fontsize: 25,
@@ -47,20 +47,8 @@ class _DashboardState extends State<Dashboard> {
                 );
               },
             ),
-            const SizedBox(height: 12),
-            CustomButton(
-              text: "Give Reviews ★",
-              height: 70,
-              width: 350,
-              fontsize: 25,
-              radius: 20,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const History()),
-                );
-              },
-            ),
+
+            SizedBox(height: 25,)
           ],
         ),
       ],
