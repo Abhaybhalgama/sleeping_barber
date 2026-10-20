@@ -99,6 +99,7 @@ class _RegisterState extends State<Register> {
                         ),
                       ),
                       Radio<String>(
+                        activeColor: Colors.black,
                         value: 'Barber',
                         groupValue: role,
                         onChanged: (value) {
@@ -115,6 +116,7 @@ class _RegisterState extends State<Register> {
                           ),
                         ),               
                       Radio<String>(
+                        activeColor: Colors.black,
                         value: 'Customer',
                         groupValue: role,
                         onChanged: (value) {

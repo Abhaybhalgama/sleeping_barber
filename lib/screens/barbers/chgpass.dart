@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sleeping_barber/controls/btabbar.dart';
 import 'package:sleeping_barber/controls/button.dart';
 import 'package:sleeping_barber/controls/heading.dart';
 import 'package:sleeping_barber/resources/colors.dart';
@@ -64,8 +63,8 @@ class _ChangePasswordState extends State<ChangePassword> {
           Heading(title: "Change Password", size: 40),
 
           Container(
-            padding: EdgeInsets.only(top: 15, left: 4, right: 4),
-            margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 19),
+            padding: EdgeInsets.only(top: 50, left: 4, right: 4,bottom:50),
+            margin: EdgeInsets.only(left: 10, right: 10, top: 40, bottom: 19),
             decoration: BoxDecoration(
               border: Border.all(color: AppColors.textBlack, width: 2),
               borderRadius: BorderRadius.circular(10),
@@ -81,7 +80,7 @@ class _ChangePasswordState extends State<ChangePassword> {
                       SizedBox(
                         width: 110,
                         child: Text(
-                          "Password:",
+                          "Old Password:",
                           style: TextStyle(
                             fontSize: 20,
                             fontFamily: 'serif',
@@ -93,6 +92,96 @@ class _ChangePasswordState extends State<ChangePassword> {
                         child: TextFormField(
                           readOnly: true,
                           obscureText: true,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return "Please enter old  password";
+                            }
+                            return null;
+                          },
+                          
+                          decoration: InputDecoration(
+                            filled: true,
+                            fillColor: AppColors.textfield,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide.none,
+                            ),
+                            contentPadding: EdgeInsets.symmetric(
+                              horizontal: 4,
+                              vertical: 10,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 20,),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 110,
+                        child: Text(
+                          "New Password:",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'serif',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextFormField(
+                          readOnly: true,
+                          obscureText: true,
+                          validator: (value) {
+                        
+                            if (value == null || value.isEmpty) {
+                              return "Please enter new password";
+                            }
+                            return null;
+                          },
+                          
+                          decoration: InputDecoration(
+                            filled: true,
+                            fillColor: AppColors.textfield,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              borderSide: BorderSide.none,
+                            ),
+                            contentPadding: EdgeInsets.symmetric(
+                              horizontal: 4,
+                              vertical: 10,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20,),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 110,
+                        child: Text(
+                          "Confirm Password:",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'serif',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextFormField(
+                          readOnly: true,
+                          obscureText: true,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return "Please enter password";
+                            }
+                            return null;
+                          },
                           
                           decoration: InputDecoration(
                             filled: true,

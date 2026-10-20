@@ -93,12 +93,6 @@ class _EditprofileState extends State<Editprofile> {
                         child: TextFormField(
                           
                           keyboardType: TextInputType.name,
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return "Please enter name";
-                            }
-                            return null;
-                          },
                           decoration: InputDecoration(
                             filled: true,
                             fillColor: AppColors.textfield,
@@ -136,14 +130,11 @@ class _EditprofileState extends State<Editprofile> {
                         child: TextFormField(
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return "Please enter email";
-                            }
                             // Standard Email Regex Pattern
                             final emailRegex = RegExp(
                               r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
                             );
-                            if (!emailRegex.hasMatch(value)) {
+                            if (!emailRegex.hasMatch(value!)) {
                               return "Please enter a valid email address";
                             }
                             return null;
@@ -221,12 +212,9 @@ class _EditprofileState extends State<Editprofile> {
                         child: TextFormField(
                           keyboardType: TextInputType.phone,
                           validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return "Please enter phone number";
-                            }
                             // Standard Phone Number Regex Pattern
                             final phoneRegex = RegExp(r'^\+?[0-9]{7,15}$');
-                            if (!phoneRegex.hasMatch(value)) {
+                            if (!phoneRegex.hasMatch(value!)) {
                               return "Please enter a valid phone number";
                             }
                             return null;
@@ -265,12 +253,7 @@ class _EditprofileState extends State<Editprofile> {
                       Expanded(
                         child: TextFormField(
                           keyboardType: TextInputType.multiline,
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return "Please enter address";
-                            }
-                            return null;
-                          },
+
                           decoration: InputDecoration(
                             filled: true,
                             fillColor: AppColors.textfield,

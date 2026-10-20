@@ -73,7 +73,7 @@ class _TabbarState extends State<BTabbar> {
             overlayColor: WidgetStatePropertyAll(Colors.transparent),
             tabs: [
               Tab(icon: Icon(Icons.home), text: 'Home'),
-              Tab(icon: Icon(Icons.design_services_outlined), text: 'Service'),
+              Tab(icon: Icon(Icons.cut), text: 'Service'),
               Tab(icon: Icon(Icons.history), text: 'History'),
               Tab(icon: Icon(Icons.person), text: 'Account'),
             ],

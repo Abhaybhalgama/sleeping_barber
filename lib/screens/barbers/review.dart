@@ -56,6 +56,301 @@ class _ReviewState extends State<Review> {
           ),
           Heading(title: "Reviews", size: 40),
           
+          Container(
+            
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.label,
+              borderRadius: BorderRadius.circular(9)
+            ),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+               crossAxisAlignment: CrossAxisAlignment.start,   
+                  children: [
+                    Text("Rahul Sharma",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("From : Rajkot",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("Haircut + Beard Trim",
+                      style: TextStyle(
+                        fontSize:15,
+                        fontFamily: "serif",
+                        fontWeight: FontWeight.bold
+                      ),),
+                    
+                    SizedBox(height: 12),
+                    Row(
+                      children: [
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                      ],
+                    )
+                  
+                  ],
+
+
+                ),
+
+                Column(
+                  children: [
+                    Text("25/7/2026",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("12:00",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    SizedBox(height: 35,),
+
+                  
+                  ],
+
+
+                ),
+              ],
+            ),
+          ),
+        
+     Container(
+            
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.label,
+              borderRadius: BorderRadius.circular(9)
+            ),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+               crossAxisAlignment: CrossAxisAlignment.start,   
+                  children: [
+                    Text("Aman Verma",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("From : Rajkot",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("Haircut",
+                      style: TextStyle(
+                        fontSize:15,
+                        fontFamily: "serif",
+                        fontWeight: FontWeight.bold
+                      ),),
+                    
+                    SizedBox(height: 12),
+
+                    Row(
+                      children: [
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                      ],
+                    )
+
+                  
+                  ],
+
+
+                ),
+
+                Column(
+                  children: [
+                    Text("25/7/2026",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("11:00",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    SizedBox(height: 35,),
+
+                  
+                  ],
+
+
+                ),
+              ],
+            ),
+          ),
+          Container(
+            
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.label,
+              borderRadius: BorderRadius.circular(9)
+            ),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+               crossAxisAlignment: CrossAxisAlignment.start,   
+                  children: [
+                    Text("Priya patel",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("From : Rajkot",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("Head Massage",
+                      style: TextStyle(
+                        fontSize:15,
+                        fontFamily: "serif",
+                        fontWeight: FontWeight.bold
+                      ),),
+                    
+                    SizedBox(height: 12),
+
+                    Row(
+                      children: [
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                      ],
+                    )
+                 
+                  ],
+
+
+                ),
+
+                Column(
+                  children: [
+                    Text("24/7/2026",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("12:00",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    SizedBox(height: 35,),
+                  
+                  ],
+
+
+                ),
+              ],
+            ),
+          ),
+          Container(
+            
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.label,
+              borderRadius: BorderRadius.circular(9)
+            ),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+               crossAxisAlignment: CrossAxisAlignment.start,   
+                  children: [
+                    Text("Karan Mehta",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("From : Rajkot",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("Beard Trim",
+                      style: TextStyle(
+                        fontSize:15,
+                        fontFamily: "serif",
+                        fontWeight: FontWeight.bold
+                      ),),
+                    
+                    SizedBox(height: 12),
+                    Row(
+                      children: [
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                        Icon(Icons.star),
+                      ],
+                    )
+                  
+                  ],
+
+
+                ),
+
+                Column(
+                  children: [
+                    Text("24/7/2026",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("11:00",
+                    style: TextStyle(
+                      fontSize:15,
+                      fontFamily: "serif",
+                      fontWeight: FontWeight.bold
+                    ),),
+                    SizedBox(height: 35,),
+
+                  
+                  ],
+
+
+                ),
+              ],
+            ),
+          )
           
 
 
