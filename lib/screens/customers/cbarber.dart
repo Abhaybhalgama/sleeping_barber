@@ -98,8 +98,9 @@ class _CbarberState extends State<Cbarber> {
                         CustomButton(
                           text: "CHOOSE",
                           fontsize: 14,
-                          width: 70,
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
 
                           onPressed: () {
                             Navigator.push(
@@ -154,8 +155,9 @@ class _CbarberState extends State<Cbarber> {
                         CustomButton(
                           text: "CHOOSE",
                           fontsize: 14,
-                          width: 70,
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
 
                           onPressed: () {
                             Navigator.push(
@@ -221,8 +223,9 @@ class _CbarberState extends State<Cbarber> {
                         CustomButton(
                           text: "CHOOSE",
                           fontsize: 14,
-                          width: 70,
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
 
                           onPressed: () {
                             Navigator.push(
@@ -277,8 +280,9 @@ class _CbarberState extends State<Cbarber> {
                         CustomButton(
                           text: "CHOOSE",
                           fontsize: 14,
-                          width: 70,
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
 
                           onPressed: () {
                             Navigator.push(

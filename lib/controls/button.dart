@@ -9,7 +9,8 @@ class CustomButton extends StatelessWidget {
   final Color backgroundColor;
   final double fontsize;
   final double radius;
-  final Alignment ? positioned;
+  final Alignment? positioned;
+ final EdgeInsetsGeometry? padding;
 
   const CustomButton({
     super.key,
@@ -19,8 +20,9 @@ class CustomButton extends StatelessWidget {
     this.width = 30.0,
     this.backgroundColor = AppColors.login,
     this.fontsize = 19,
-    this.radius=35,
-    this.positioned
+    this.radius = 35,
+    this.positioned,
+    this.padding,
   });
 
   @override
@@ -29,13 +31,11 @@ class CustomButton extends StatelessWidget {
       width: width,
       height: height,
       child: ElevatedButton(
-
-        
         style: ElevatedButton.styleFrom(
-         alignment:positioned ,
-          padding: EdgeInsets.all(4),
-          overlayColor:Colors.transparent,
-          backgroundColor:backgroundColor,
+          alignment: positioned,
+          padding: padding ?? EdgeInsets.zero,
+          overlayColor: Colors.transparent,
+          backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(radius),
           ),

@@ -107,8 +107,9 @@ class _CserviceState extends State<Cservice> {
                           CustomButton(
                           text: "CHOOSE",
                           fontsize: 14, 
-                          width: 70,  
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
                                      
                           onPressed: () {
                            Navigator.push(
@@ -177,8 +178,9 @@ class _CserviceState extends State<Cservice> {
                           CustomButton(
                           text: "CHOOSE",
                           fontsize: 14, 
-                          width: 70,  
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
                                      
                           onPressed: () {
                            Navigator.push(
@@ -250,9 +252,9 @@ class _CserviceState extends State<Cservice> {
                           CustomButton(
                           text: "CHOOSE",
                           fontsize: 14, 
-                          width: 70,  
+                          width: 90,
                           radius: 19,
-                                     
+                          padding: EdgeInsets.only(left: 7, right: 4),
                           onPressed: () {
                            Navigator.push(
                              context,
@@ -320,8 +322,9 @@ class _CserviceState extends State<Cservice> {
                           CustomButton(
                           text: "CHOOSE",
                           fontsize: 14, 
-                          width: 70,  
+                          width: 90,
                           radius: 19,
+                          padding: EdgeInsets.only(left: 7, right: 4),
                                      
                           onPressed: () {
                            Navigator.push(

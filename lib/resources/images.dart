@@ -13,6 +13,7 @@ List < String > i2 = [
   'assets/images/s3.png',
   'assets/images/s4.png',
   'assets/images/barber.png',
+  'assets/images/barber(2).png',
 
 ];
   

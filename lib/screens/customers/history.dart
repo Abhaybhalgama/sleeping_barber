@@ -260,7 +260,7 @@ class _HistoryState extends State<History> {
                       fontFamily: "serif",
                       fontWeight: FontWeight.bold
                     ),),
-                    SizedBox(height: 35,),
+                    SizedBox(height: 100,),
 
                   
                   ],

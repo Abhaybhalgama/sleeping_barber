@@ -81,7 +81,7 @@ class _RecentState extends State<Recent> {
                       fontFamily: "serif",
                       fontWeight: FontWeight.bold
                     ),),
-                    SizedBox(height: 35,),
+                    SizedBox(height: 30,),
                     CustomButton(
                       text: "CANCLE",
                       width: 110,
@@ -194,7 +194,8 @@ class _RecentState extends State<Recent> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
-               crossAxisAlignment: CrossAxisAlignment.start,   
+               mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,   
                   children: [
                     Text("Priya patel",
                     style: TextStyle(
@@ -244,7 +245,7 @@ class _RecentState extends State<Recent> {
                       fontFamily: "serif",
                       fontWeight: FontWeight.bold
                     ),),
-                    SizedBox(height: 35,),
+                    SizedBox(height: 70,),
                   
                   ],
 
@@ -316,7 +317,7 @@ class _RecentState extends State<Recent> {
                       fontFamily: "serif",
                       fontWeight: FontWeight.bold
                     ),),
-                    SizedBox(height: 35,),
+                    SizedBox(height: 70,),
 
                   
                   ],

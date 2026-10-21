@@ -93,11 +93,11 @@ class _ReviewState extends State<Review> {
                     SizedBox(height: 12),
                     Row(
                       children: [
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
                       ],
                     )
                   
@@ -169,9 +169,9 @@ class _ReviewState extends State<Review> {
 
                     Row(
                       children: [
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
+                        Icon(Icons.star,color:Colors.amber),
+                        Icon(Icons.star,color:Colors.amber),
+                        Icon(Icons.star,color:Colors.amber),
                       ],
                     )
 
@@ -243,10 +243,10 @@ class _ReviewState extends State<Review> {
 
                     Row(
                       children: [
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
                       ],
                     )
                  
@@ -315,10 +315,10 @@ class _ReviewState extends State<Review> {
                     SizedBox(height: 12),
                     Row(
                       children: [
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
-                        Icon(Icons.star),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
+                        Icon(Icons.star,color: Colors.amber,),
                       ],
                     )
                   
