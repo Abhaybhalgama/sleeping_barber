@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sleeping_barber/controls/atabbar.dart';
 import 'package:sleeping_barber/controls/btabbar.dart';
 // import 'package:sleeping_barber/controls/btabbar.dart';
 import 'package:sleeping_barber/controls/button.dart';
@@ -186,7 +187,7 @@ class _LoginState extends State<Login> {
                 if (formkey.currentState!.validate()) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => CTabbar()),
+                    MaterialPageRoute(builder: (context) => ATabbar()),
                   );
                 }
               },

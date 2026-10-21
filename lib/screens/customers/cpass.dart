@@ -90,7 +90,6 @@ class _ChangePasswordState extends State<ChangePassword> {
                       ),
                       Expanded(
                         child: TextFormField(
-                          readOnly: true,
                           obscureText: true,
                           validator: (value) {
                             if (value == null || value.isEmpty) {
@@ -132,7 +131,6 @@ class _ChangePasswordState extends State<ChangePassword> {
                       ),
                       Expanded(
                         child: TextFormField(
-                          readOnly: true,
                           obscureText: true,
                           validator: (value) {
                         
@@ -174,7 +172,6 @@ class _ChangePasswordState extends State<ChangePassword> {
                       ),
                       Expanded(
                         child: TextFormField(
-                          readOnly: true,
                           obscureText: true,
                           validator: (value) {
                             if (value == null || value.isEmpty) {
