@@ -26,6 +26,8 @@ class _DashboardState extends State<Dashboard> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
              Text( "Total Barbers : ",
+          
+          
              style: TextStyle(
               fontSize: 27,
               fontFamily: "serif"

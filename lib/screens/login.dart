@@ -187,7 +187,7 @@ class _LoginState extends State<Login> {
                 if (formkey.currentState!.validate()) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ATabbar()),
+                    MaterialPageRoute(builder: (context) => BTabbar()),
                   );
                 }
               },

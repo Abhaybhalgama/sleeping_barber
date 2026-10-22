@@ -32,8 +32,7 @@ class _DashboardState extends State<Dashboard> {
 
         const SizedBox(height: 12),
 
-        Column(
-          children: [
+    
             CustomButton(
               text: "Show All Booking",
               height: 70,
@@ -61,8 +60,7 @@ class _DashboardState extends State<Dashboard> {
                 );
               },
             ),
-          ],
-        ),
+         
       ],
     );
   }

@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
   final Alignment? positioned;
  final EdgeInsetsGeometry? padding;
 
-  const CustomButton({
+   const CustomButton({
     super.key,
     required this.text,
     required this.onPressed,
