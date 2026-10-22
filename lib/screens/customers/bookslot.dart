@@ -281,7 +281,11 @@ class _BookslotState extends State<Bookslot> {
             ),
           ),
           SizedBox(height: 20),
-          Heading(title: "Booked Slots : ", size: 25),
+          Row(
+            children: [
+              Heading(title: " Booked Slots : ", size: 25,),
+            ],
+          ),
 
           Column(
             children: [
@@ -355,7 +359,7 @@ class _BookslotState extends State<Bookslot> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 35),
+                        SizedBox(height: 70),
                       ],
                     ),
                   ],

@@ -81,7 +81,7 @@ class _RecentState extends State<Recent> {
                       fontFamily: "serif",
                       fontWeight: FontWeight.bold
                     ),),
-                    SizedBox(height: 30,),
+                    SizedBox(height: 29,),
                     CustomButton(
                       text: "CANCLE",
                       width: 110,

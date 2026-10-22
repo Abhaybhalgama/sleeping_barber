@@ -21,11 +21,11 @@ class _DashboardState extends State<Dashboard> {
         Heading(title: "Welcome Abhay", size: 40),
 
         Container(
-          margin: const EdgeInsets.only(left: 5, bottom: 3, top: 2),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Image.asset(i2[7], fit: BoxFit.contain),
+              SizedBox(height: 15,),
               Image.asset(i2[8], fit: BoxFit.contain),
             ],
           ),

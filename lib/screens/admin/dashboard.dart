@@ -102,7 +102,7 @@ class _DashboardState extends State<Dashboard> {
               )
             ],
         ),
-                SizedBox(height: 50,),
+                SizedBox(height: 80,),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
