@@ -1,17 +1,27 @@
-# sleeping_barber
+# Sleeping Barber
 
-A new Flutter project.
+A multi-barber salon booking app built with Flutter.
 
-## Getting Started
+Each barber has their own independent queue, and a time slot is locked the moment it's selected, so two customers can never book the same slot. The idea comes from the classic Operating System "Sleeping Barber Problem".
 
-This project is a starting point for a Flutter application.
+## Roles
+- **Customer:** choose a barber, book a slot, track booking status, rate the service
+- **Barber:** view booking requests, accept or reject, mark as done, see reviews
+- **Admin:** manage barbers, customers and services, and monitor all bookings
 
-A few resources to get you started if this is your first Flutter project:
+## Screens
+(add 4-5 screenshots here)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Design
+Figma: https://www.figma.com/design/QUkNarJYsIUb6LBCrBTTbZ/5th_sem_project?node-id=0-1&t=kzBXZhCjyWT14M1T-1
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech
+- Flutter and Dart
+- Role-based tab navigation using DefaultTabController
+- Reusable controls and a central resources folder for colors and images
+
+## Status
+Frontend is complete with dummy data. Backend (Firebase) is coming next.
+
+## Author
+Abhay Bhalgama, India
